@@ -1,0 +1,400 @@
+body {
+    margin: 50px;
+}
+
+header {
+    background-color: rgb(230, 230, 230);
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 33.33%;
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-bottom: 20px;
+    
+}
+.nav-wrapper > div {
+    margin-left : 20px;
+    font-weight: 0.9em;
+    text-transform: uppercase;
+}
+.nav-link-wrapper {
+    height: 22xp;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 2s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid cyan;
+}
+
+.nav-link-wrapper a:hover {
+    color: blue;
+}
+/*paragraphs*/
+.subtitle {
+    display:grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+#prgf, #prgf1, #prgf2 {
+    text-transform: none;
+    color: rgb(100, 100, 100);
+    font-weight: italic;
+    text-align: justify;
+    letter-spacing: 2px;
+    width: 90%;
+}
+#prgf1 {
+    font-size: 14px;
+    
+}
+#prgf2 {
+    font-size: 16px;
+  
+}
+
+/*gallery*/
+.imgs {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    margin-bottom: 200px;
+    justify-content: center;
+    margin-left: -50px;
+    margin-right: 200px;
+}
+
+.img > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    
+}
+
+/***/
+.imgtxt {
+    display: block;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: aliceblue;
+    top: -120px;
+    margin-left: 10px;
+    
+}
+/*Make the sub text - the new one is hidden*/
+.img .imgtxt > div {
+    transition: 2s;
+    color: transparent;
+}
+/*Hover action with hiding the txt*/
+.img:hover .imgtxt {
+    cursor: pointer;
+    display: block;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    font-size: auto;
+    color: transparent;
+    background-color: black;
+    top: 50px;
+    transition: 2s;
+    border: solid black;
+}
+
+/*Grap new txt*/
+.img:hover >.imgtxt >.new-txt {
+    cursor: pointer;
+    display: block;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    font-size: auto;
+    color: aliceblue;
+    background-color: black;
+    margin-top: 0;
+    transition: 2s;
+    border: solid black;
+    height: 100px;
+    overflow: scroll;
+}
+
+.img:hover >.imgtxt >.new-txt:hover {
+    background-color:rgb(243, 9, 192);
+    text-transform: capitalize;
+}
+
+/*logos*/
+.logo-link a img{
+    width: 150px;
+    height: 150px;
+}
+.logo-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px; 
+    margin-left: 00px;
+    margin-bottom: 200px;
+    margin-right: 100px;
+}
+.logo-links > div {
+    width: 40%;
+}
+
+
+/*footer*/
+footer {
+    background-color:blueviolet;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-bottom: 20px;
+    padding-right: 90px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#adress, #time {
+    text-transform: capitalize;
+}
+
+
+
+.nav-link-footer {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -30px;
+    border-bottom: 1px transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    
+    
+    
+}
+
+.nav-link-footer a {
+    color: white;
+    text-decoration: none;
+}
+.nav-link-footer a:hover {
+    border-bottom: 1px solid cyan;
+    color: blue;
+    transition: 2s;
+}
+/* Media*/
+@media all and (max-width: 500px) {
+    body {
+    background-color: rgb(243, 157, 243);
+    margin: 10px;
+    }
+    header {
+        background-color: rgb(200, 200, 200);
+        
+    }
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        padding-top: 20px;
+        padding-left: 9px;
+        padding-bottom: 10px;
+        
+    }
+    .nav-wrapper > div {
+        margin-left : 20px;
+        font-weight: 0.5em;
+        text-transform: uppercase;
+    }
+    .nav-link-wrapper {
+        height: 11xp;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+    }
+    
+    .nav-link-wrapper a {
+        color: #5c5c5c;
+        text-decoration: none;
+        transition: color 2s;
+    }
+    
+    .nav-link-wrapper:hover {
+        border-bottom: 1px solid rgb(0, 153, 255);
+    }
+    
+    .nav-link-wrapper a:hover {
+        color: rgb(140, 0, 255);
+    }
+    /*paragraphs*/
+    .subtitle {
+        grid-gap: 10px;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-transform: uppercase;
+    }
+    #prgf, #prgf1, #prgf2 {
+        text-transform: none;
+        color: rgb(100, 100, 100);
+        font-weight: italic;
+        text-align: justify;
+        letter-spacing: 2px;
+        width: 90%;
+    }
+    #prgf1 {
+        font-size: 14px;
+        
+    }
+    #prgf2 {
+        font-size: 16px;
+      
+    }
+    
+    /*gallery*/
+    .imgs {
+        grid-gap: 5px;
+        margin-bottom: 200px;
+        justify-content: center;
+        margin-left: -50px;
+        margin-right: 200px;
+    }
+    
+    .img > img {
+        width: 50px;
+        height: 50px;
+        border-radius: 30%;
+        
+    }
+    
+    /***/
+    .imgtxt {
+        display: block;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: aliceblue;
+        top: -120px;
+        margin-left: 10px;
+        
+    }
+    /*Make the sub text - the new one is hidden*/
+    .img .imgtxt > div {
+        transition: 2s;
+        color: transparent;
+    }
+    /*Hover action with hiding the txt*/
+    .img:hover .imgtxt {
+        cursor: pointer;
+        display: block;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        font-size: auto;
+        color: transparent;
+        background-color: black;
+        top: 50px;
+        transition: 2s;
+        border: solid black;
+    }
+    
+    /*Grap new txt*/
+    .img:hover >.imgtxt >.new-txt {
+        cursor: pointer;
+        display: block;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        font-size: auto;
+        color: aliceblue;
+        background-color: black;
+        margin-top: 0;
+        transition: 2s;
+        border: solid black;
+        height: 10px;
+        overflow: scroll;
+    }
+    
+    .img:hover >.imgtxt >.new-txt:hover {
+        background-color:rgb(243, 9, 192);
+        text-transform: capitalize;
+    }
+    
+    /*logos*/
+    .logo-link a img{
+        width: 15px;
+        height: 15px;
+    }
+    .logo-links {
+        
+        grid-gap: 10px; 
+        margin-left: 00px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+    .logo-links > div {
+        width: 40%;
+    }
+    
+    
+    /*footer*/
+    footer {
+        background-color:blueviolet;
+        padding-top: 20px;
+        padding-left: 90px;
+        padding-bottom: 20px;
+        padding-right: 90px;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    #adress, #time {
+        text-transform: capitalize;
+    }
+    
+    
+    
+    .nav-link-footer {
+        list-style-type: none;
+        text-align: center;
+        margin-left: -30px;
+        border-bottom: 1px transparent;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px;
+        
+        
+        
+    }
+    
+    .nav-link-footer a {
+        color: white;
+        text-decoration: none;
+    }
+    .nav-link-footer a:hover {
+        border-bottom: 1px solid cyan;
+        color: blue;
+        transition: 2s;
+    }
+}
