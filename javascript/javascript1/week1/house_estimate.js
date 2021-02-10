@@ -39,5 +39,5 @@ else if ((petersHousePrice < housePriceP) && (juliasHousePrice > housePriceJ)) {
 }
 else {
     console.log ('Peter and Julia are paying too little')
-
 }
+
