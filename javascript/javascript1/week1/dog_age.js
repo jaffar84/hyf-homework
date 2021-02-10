@@ -17,4 +17,5 @@ else if ((ageOfTheDog > 1) && (ageOfTheDog <=16)) {
 }
 else {
     console.log ('Dogs cannot live more than 16 human years')
+    
 }
