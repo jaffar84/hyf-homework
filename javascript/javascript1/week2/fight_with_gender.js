@@ -2,7 +2,7 @@
 const gender = female;
 function getFullname(gender,firstname, surname, useFormalName)
 {
-    if((useFormalName = true) && (gender = true)){
+    if((useFormalName == true) && (gender == true)){
         return 'Lady ' + firstname + ' ' + surname
     }
     else if ((useFormalName = true) && (gender = false)){
