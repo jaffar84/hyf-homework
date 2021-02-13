@@ -1,10 +1,10 @@
 var cloths = ['tshirt and short','jacket and pants'];
 function temperature(temp) {
     if (temp < 15){
-        return cloths = 'jacket and pants';
+        return cloths[0];
     }
     else {
-        return cloths = 'tshirt and short';
+        return cloths[1];
     }
 }
 console.log(temperature(18));
